@@ -22,11 +22,3 @@ window.addEventListener('scroll', function() {
         navbar.style.backgroundColor = 'var(--light-color)';
     }
 });
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('[data-lang-switch="true"] a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      localStorage.setItem('langChoice', link.getAttribute('href').includes('/zh-cn/') ? 'zh-cn' : 'en');
-    });
-  });
-});
-
