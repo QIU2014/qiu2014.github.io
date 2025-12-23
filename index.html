@@ -82,25 +82,11 @@
             <p>Copyright © 2025 QIU2014</p>
         </div>
     </footer>
-    <script>
-        (function() {
-            // Check if user already chose a language
-            if (localStorage.getItem('langChoice')) return;
-
-            // Get browser language
-            var lang = navigator.language || navigator.userLanguage;
-
-            // If it's Chinese and not already in /zh-cn/
-            if (lang.toLowerCase().startsWith('zh') && !window.location.pathname.startsWith('/zh-cn')) {
-              window.location.href = '/zh-cn/';
-            }
-        })();
-    </script>
-
     <script src="/js/script.js"></script>
 </body>
 
 </html>
+
 
 
 
